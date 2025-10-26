@@ -2,12 +2,17 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+ 
   line-height: 1.5;
   color: #333;
 }
+.header-container {
+  width: 100%;
+  margin: 0 0;
+  position: fixed;
+}
 
-/* Header */
+
 .site-header {
   background: white;
   color: #0b0a0a;
@@ -19,7 +24,7 @@ body {
 .header-img {
   width: 65px;
   height: 65px;
-  
+  border: 2px solid #000;
   display: inline-block;
 }
 .logo {
@@ -27,7 +32,7 @@ body {
   font-weight: bold;
   color: #0f0f0f;
   text-decoration: none;
-  
+  border: 2px solid #000;
   display: inline-block;
 }
 .nav-list {
@@ -35,6 +40,7 @@ body {
   display: flex;
   gap: 20px;
 }
+
 .nav-link {
   text-decoration: none;
   color: #070606;
@@ -52,8 +58,16 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
-.nav-link:hover { color: rgb(0,213,255); }
+.getstarted-btn:hover {
+  background: rgb(13, 125, 84);
+  
+}
+.getstarted-btn:active {
+  transform: scale(0.98);
+}
+.nav-link:hover { color: rgb(25, 164, 106);
+ }
 .nav-link.active {
-  border-bottom: 2px solid rgb(0,213,255);
+  border-bottom: 2px solid rgb(14, 183, 121);transform: scale(0.98);
 }
 

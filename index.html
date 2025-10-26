@@ -9,7 +9,7 @@
         .firstpage{
             background-color: rgb(245, 249, 246);
             margin: 0px;
-            height: 1000px;
+            height: 5000px;
             
         }
         .firstpage>h1{
@@ -24,15 +24,19 @@
         }
         .firstpage>img{
             box-sizing: border-box;
-            width: 1000px;
-            height: 900px;
-           
+            width: 900px;
+            height: 600px;
+            
             float: right;
             display: inline-block;
-           
-            padding-top: 300px;
-            padding-right: 70px;
+            border-radius: 35px;
+            margin-top: 300px;
+            margin-right: 70px;
             
+        }
+        .firstpage>img:hover{
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
         }
         .firstpage>p{
            
@@ -45,32 +49,54 @@
             padding-top: 0px;
             
         }
+        .firstpage>.buttonfirstpage>button{
+            margin: 20px;
+            padding: 15px 25px;
+            font-size: 20px;
+            width: 220px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            background-color: rgb(10, 201, 103);
+            color: white;
+        }
+        .firstpage>.buttonfirstpage>button:hover{
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
     </style>
 </head>
 <body>
-      <header class="site-header">
+    <div class="header-container">
+        <header class="site-header">
         <img src="./image copy.png" alt="veggies" class="header-img">
-  <a class="logo">EatWell Daily</a>
-  <nav class="nav-list">
-    <ul class="nav-list">
-      <li class="nav-link">Tips</li>
-      <li class="nav-link">Receipes</li>
-      <li class="nav-link">Tools</li>
-      <li class="nav-link">About</li>
-    </ul>
-    <button class="getstarted-btn">Get Started</button>
-  </nav>
+        <a class="logo">EatWell Daily</a>
+        <nav class="nav-list">
+            <ul class="nav-list">
+                <li class="nav-link">Tips</li>
+                <li class="nav-link">Receipes</li>
+                <li class="nav-link">Tools</li>
+                <li class="nav-link">About</li>
+            </ul>
+            <button class="getstarted-btn">Get Started</button>
+        </nav>
   
 
 </header>
+    </div>
+     
 
 
-<!-- Write your HTML here -->
+
     <div class ="firstpage">
+        
         <h1>Eat Better, <span style="color: rgb(10, 201, 103);display: block;">Live healthier</span></h1>
-        <img src="./image.png" alt ="green veggies">
+        <img  src="./image.png" alt ="green veggies">
         <p>Discover simple, science-backed tips to transform your eating habits. From nutritious recipes to practical advice, we make healthy eating easy and delicious.</p>
-
+        <div class="buttonfirstpage" style="padding-left: 100px;">
+            <button class="exploretips">Explore Tips</button>
+            <button class="viewreceipes" style="background-color: aliceblue;border: 2px solid rgb(10, 201, 103);color: rgb(10, 201, 103);">View Receipes</button>
+        </div>
     
     </div>
     
