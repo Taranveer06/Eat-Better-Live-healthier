@@ -9,7 +9,7 @@
         .firstpage{
             background-color: rgb(245, 249, 246);
             margin: 0px;
-            height: 5000px;
+            height: 1000px;
             
         }
         .firstpage>h1{
@@ -64,10 +64,35 @@
             transform: scale(1.05);
             transition: transform 0.3s ease;
         }
+        .box1, .box2, .box3, .box4, .box5, .box6 {
+            background-color: rgb(245, 249, 246);
+            display: inline-block;
+           
+            width: 20%;
+            height: auto;
+            border-radius: 15px;
+            padding: 40px;
+            margin: 20px 100px;
+            font-size: 25px;
+            box-shadow: 0 4px 8px rgba(7, 7, 7, 0.1);
+        }
+        .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+            box-shadow: 0 8px 16px rgba(7, 7, 7, 0.2);
+        }
+        .wellnesstips{
+            margin-top: 20px;
+            text-align: center;
+            font-size: 28px;
+            padding-left: 200px;
+            padding-right: 200px;
+            color: #555;
+        }
     </style>
 </head>
 <body>
-    <div class="header-container">
+    <div class="header-container" style="z-index: 100;">
         <header class="site-header">
         <img src="./image copy.png" alt="veggies" class="headerimg">
         <a class="logo">EatWell Daily</a>
@@ -89,7 +114,8 @@
 
 
     <div class ="firstpage">
-        
+        <button style="position: absolute; top:250px;left:85px;height: 40px; width: 270px;font-size: 24px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; background-color: rgb(228, 238, 228);border: 3px solid rgb(110, 202, 133);border-radius: 45%; z-index: 0;">Your daily wellness guide
+        </button>
         <h1>Eat Better, <span style="color: rgb(10, 201, 103);display: block;">Live healthier</span></h1>
         <img  src="./image.png" alt ="green veggies">
         <p>Discover simple, science-backed tips to transform your eating habits. From nutritious recipes to practical advice, we make healthy eating easy and delicious.</p>
@@ -99,7 +125,20 @@
         </div>
     
     </div>
-    
+    <div class="secondpage" style="background-color: white; height: 800px; width: 100%; margin-top: -50px; box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.1); border-top-left-radius: 50px; border-top-right-radius: 50px;">
+        <h2 style="padding-left: 100px; padding-top: 80px; font-size: 36px; font-weight: bold;">Why Choose EatWell Daily?</h2>
+        <p style="padding-left: 100px; padding-right: 100px; font-size: 24px; line-height: 1.6; color: #555;">At EatWell Daily, we believe that healthy eating should be simple, enjoyable, and accessible to everyone. Our platform offers a wealth of resources designed to help you make informed food choices and embrace a healthier lifestyle. Whether you're looking for quick tips, delicious recipes, or practical tools, we've got you covered.</p>
+        <p style="font-size: 80px; font-weight: 500;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;text-align: center;margin-top: 40px;">Daily Wellness Tips</p>
+        <div class="wellnesstips"> Small changes lead to big results. Explore our curated tips to kickstart your journey to better health</div>
+        <div class="box1">Eat the Rainbow Daily Include fruits and vegetables of different colors in every meal to ensure you get a wide variety of nutrients and antioxidants.</div>
+        <div class="box2">Stay Hydrated Aim to drink at least 8 glasses of water a day to keep your body hydrated and support overall health.</div>
+        <div class="box3">Mindful Eating Pay attention to your hunger and fullness cues, and try to eat without distractions to better enjoy your food and prevent overeating.</div>
+        <div class="box4">Plan Your Meals Take some time each week to plan your meals. This can help you make healthier choices and reduce last-minute unhealthy eating.</div>
+        <div class="box5">Limit Processed Foods Try to minimize your intake of processed foods, which often contain high levels of sugar, salt, and unhealthy fats.</div>
+        <div class="box6">Incorporate Whole Grains Choose whole grains like brown rice, quinoa, and whole wheat bread over refined grains for added fiber and nutrients.</div>
+        
+    </div>
+    d
     
     
 </body>
