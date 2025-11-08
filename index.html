@@ -1,227 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>EatWell Daily</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="nutrition receipes.css">
-    <style>
-        .firstpage{
-            background-color: rgb(245, 249, 246);
-            margin: 0px;
-            height: 1000px;
-            
-        }
-        .firstpage>h1{
-            padding-left: 70px;
-            padding-right: 50px;
-            text-align: left;
-            display: inline-block;
-            float: left;
-            padding-top: 330px;
-            font-size: 95px;
 
-        }
-        .firstpage>img{
-            box-sizing: border-box;
-            width: 900px;
-            height: 600px;
-            
-            float: right;
-            display: inline-block;
-            border-radius: 35px;
-            margin-top: 300px;
-            margin-right: 70px;
-            
-        }
-        .firstpage>img:hover{
-            transform: scale(1.05);
-            transition: transform 0.3s ease;
-        }
-        .firstpage>p{
-           
-            display: inline-block;
-            padding: 50px;
-            font-size: 28px;
-            text-align: left;
-            width: 800px;
-            padding-left: 100px;
-            padding-top: 0px;
-            
-        }
-        .firstpage>.buttonfirstpage>button{
-            margin: 20px;
-            padding: 15px 25px;
-            font-size: 20px;
-            width: 220px;
-            border-radius: 8px;
-            border: none;
-            cursor: pointer;
-            background-color: rgb(10, 201, 103);
-            color: white;
-        }
-        .firstpage>.buttonfirstpage>button:hover{
-            transform: scale(1.05);
-            transition: transform 0.3s ease;
-        }
-        .box1, .box2, .box3, .box4, .box5, .box6 {
-            background-color: rgb(245, 249, 246);
-            display: inline-block;
-            color: rgb(6, 6, 6);
-            width: 20%;
-            height: auto;
-            border-radius: 15px;
-            padding: 40px;
-            margin: 20px 100px;
-            font-size: 25px;
-            box-shadow: 0 4px 8px rgba(7, 7, 7, 0.1);
-        }
-        .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover {
-            transform: scale(1.05);
-            transition: transform 0.3s ease;
-            box-shadow: 0 8px 16px rgba(7, 7, 7, 0.2);
-        }
-        .wellnesstips{
-            margin-top: 20px;
-            text-align: center;
-            font-size: 28px;
-            padding-left: 200px;
-            padding-right: 200px;
-            color: #555;
-        }
-        .box1{
-            margin-top: 40px;
-            background-image: url('./image\ copy\ 2.png');
-            background-size: 40px 40px;
-            background-repeat: no-repeat;
-        }
-        .box2{
-            background-image: url('./image\ copy\ 4.png');
-            background-size: 40px 40px;
-            background-repeat: no-repeat;
-        }
-        .nutrution_receipes{
-            text-align: center;
-            margin-top:345px ;
-            background-color: rgb(246, 246, 246);
-            padding: 50px;
-        }
+    <style>
+
+
+
     </style>
 </head>
+
 <body>
+
     <div class="header-container" style="z-index: 100;">
         <header class="site-header">
-        <img src="./image copy.png" alt="veggies" class="headerimg">
-        <a class="logo">EatWell Daily</a>
-        <nav class="nav-list">
-            <ul class="nav-list">
-                <li class="nav-link">Tips</li>
-                <li class="nav-link">Receipes</li>
-                <li class="nav-link">Tools</li>
-                <li class="nav-link">About</li>
-            </ul>
-            <button class="getstarted-btn">Get Started</button>
-        </nav>
-  
-
-</header>
+            <img src="./image copy.png" alt="veggies" class="headerimg">
+            <a class="logo">EatWell Daily</a>
+            <nav class="nav-list">
+                <ul class="nav-list">
+                    <li class="nav-link">
+                        <a href="#tips" class="navbar" style="text-decoration-line: none;">Tips</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#recepies" class="navbar" style="text-decoration-line: none;">Receipes</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#Tools" class="navbar" style="text-decoration-line: none;">Tools</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#About" class="navbar" style="text-decoration-line: none;">About</a>
+                    </li>
+                </ul>
+                <button class="getstarted-btn">Get Started</button>
+            </nav>
+        </header>
     </div>
-     
 
-
-
-    <div class ="firstpage">
-        <button style="position: absolute; top:250px;left:85px;height: 40px; width: 270px;font-size: 24px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; background-color: rgb(228, 238, 228);border: 3px solid rgb(110, 202, 133);border-radius: 45%; z-index: 0;">Your daily wellness guide
-        </button>
+    <div class="firstpage">
+        <button class="wellness-guide-btn">Your daily wellness guide</button>
         <h1>Eat Better, <span style="color: rgb(10, 201, 103);display: block;">Live healthier</span></h1>
-        <img  src="./image.png" alt ="green veggies">
-        <p>Discover simple, science-backed tips to transform your eating habits. From nutritious recipes to practical advice, we make healthy eating easy and delicious.</p>
-        <div class="buttonfirstpage" style="padding-left: 100px;">
+        <img src="./image.png">
+        <p>Discover simple, science-backed tips to transform your eating habits. From nutritious recipes to practical
+            advice, we make healthy eating easy and delicious.</p>
+        <div class="buttonfirstpage">
             <button class="exploretips">Explore Tips</button>
-            <button class="viewreceipes" style="background-color: aliceblue;border: 2px solid rgb(10, 201, 103);color: rgb(10, 201, 103);">View Receipes</button>
+            <button class="viewreceipes"
+                style="background-color: aliceblue;border: 2px solid rgb(10, 201, 103);color: rgb(10, 201, 103);">View
+                Receipes</button>
         </div>
-    
-    </div>
-    <div class="secondpage" style="background-color: white; height: 800px; width: 100%; margin-top: -50px; box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.1); border-top-left-radius: 50px; border-top-right-radius: 50px;">
-        <h2 style="padding-left: 100px; padding-top: 80px; font-size: 36px; font-weight: bold;">Why Choose EatWell Daily?</h2>
-        <p style="padding-left: 100px; padding-right: 100px; font-size: 24px; line-height: 1.6; color: #555;">At EatWell Daily, we believe that healthy eating should be simple, enjoyable, and accessible to everyone. Our platform offers a wealth of resources designed to help you make informed food choices and embrace a healthier lifestyle. Whether you're looking for quick tips, delicious recipes, or practical tools, we've got you covered.</p>
-        <p style="font-size: 80px; font-weight: 500;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;text-align: center;margin-top: 40px;">Daily Wellness Tips</p>
-        <div class="wellnesstips"> Small changes lead to big results. Explore our curated tips to kickstart your journey to better health</div>
-        <div class="box1">
-            Eat the Rainbow Daily Include fruits and vegetables of different colors in every meal to ensure you get a wide variety of nutrients and antioxidants.
-        <button style="border: none; padding: 5px;font-size: 17px;background-color: rgb(11, 191, 110);border-radius: 15px;position: absolute;top: 1px;right: 5px;">Nutrition</button>
-        </div>
-        <div class="box2">
-            Stay Hydrated Aim to drink at least 8 glasses of water a day to keep your body hydrated and support overall health.
-        <button style="border: none; padding: 5px;font-size: 17px;background-color: rgb(11, 191, 110);border-radius: 15px;position: absolute;top: 1px;right: 5px;">Hydration</button>
-        </div>
-        <div class="box3">
-            Mindful Eating Pay attention to your hunger and fullness cues, and try to eat without distractions to better enjoy your food and prevent overeating.
-        <button style="border: none; padding: 5px;font-size: 17px;background-color: rgb(11, 191, 110);border-radius: 15px;position: absolute;top: 1px;right: 5px;">Wellness</button>
-        </div>
-        <div class="box4">
-            Plan Your Meals Take some time each week to plan your meals. This can help you make healthier choices and reduce last-minute unhealthy eating.
-        <button style="border: none; padding: 5px;font-size: 17px;background-color: rgb(11, 191, 110);border-radius: 15px;position: absolute;top: 1px;right: 5px;">Planning</button>
-        </div>
-        <div class="box5">Limit Processed Foods Try to minimize your intake of processed foods, which often contain high levels of sugar, salt, and unhealthy fats.
-        <button style="border: none; padding: 5px;font-size: 17px;background-color: rgb(11, 191, 110);border-radius: 15px;position: absolute;top: 1px;right: 5px;">Healthy Eating</button>
-        </div>
-        <div class="box6">
-            Light Dinner Wins Keep dinner lighter and finish eating 2-3 hours before bedtime to improve digestion and sleep
-        <button style="border: none; padding: 5px;font-size: 17px;background-color: rgb(11, 191, 110);border-radius: 15px;position: absolute;top: 1px;right: 5px;">Evening</button>
-        </div>
-        
     </div>
 
-
-    <div class="nutrution_receipes">
-        <p style="font-weight:bold;font-size: 56px;">Nutrition Receipes Collection</p>
-        <p style="font-size: 28px;color:  rgb(91, 90, 90);">Delicious, healthy meals that are easy to prepare and perfect for any time of day</p>
-            <div style="display: inline-block;height: auto;width: 24%; border-radius: 15px;
-            padding: 40px;
-            padding-bottom: 10px;
-            font-size: 25px;
-            box-shadow: 0 4px 8px rgba(7, 7, 7, 0.1); ">
-                
-               <a href="./Mediterranean Quinoa Bowl.html"><img src="./image copy 5.png" alt="Mediterranean Quinoa Bowl" style="width:100%;height:400px;margin-top: 0px;"></a> 
-               <p style="font-size: 34px;font-weight:bold;">Mediterranean Bowl </p>
+    <div class="secondpage">
+        <h2>Why Choose EatWell Daily?</h2>
+        <p>At EatWell Daily, we believe that healthy eating should be simple, enjoyable, and accessible to everyone. Our
+            platform offers a wealth of resources designed to help you make informed food choices and embrace a
+            healthier lifestyle. Whether you're looking for quick tips, delicious recipes, or practical tools, we've got
+            you covered.</p>
+        <p class="wellness-title">Daily Wellness Tips</p>
+        <div class="wellnesstips">Small changes lead to big results. Explore our curated tips to kickstart your journey
+            to better health</div>
+        <DIV class="boxes" id="tips">
+            <div class="box1">
+                Eat the Rainbow Daily Include fruits and vegetables of different colors in every meal to ensure you get
+                a wide variety of nutrients and antioxidants.
+                <button>Nutrition</button>
             </div>
-            <div style="display: inline-block;height: auto;width: 24%; border-radius: 15px;
-                        padding: 40px;
-                        padding-bottom: 10px;
-                        font-size: 25px;
-                        box-shadow: 0 4px 8px rgba(7, 7, 7, 0.1);">
-                
-                <a href="./Herb-Crusted Salmon.html"><img src="./image copy 6.png" alt="Herb-Crusted Salmon" style="width:400px;height:400px;margin-top: 0px;"></a>
-                <p style="font-size: 34px;font-weight:bold;">Herb-Crusted Salmon</p>
-         
-               
+            <div class="box2">
+                Stay Hydrated Aim to drink at least 8 glasses of water a day to keep your body hydrated and support
+                overall health.
+                <button>Hydration</button>
             </div>
-            <div style="display: inline-block;height: auto;width: 24%; border-radius: 15px;
-                        padding: 40px;
-                        padding-bottom: 10px;
-                        font-size: 25px;
-                        box-shadow: 0 4px 8px rgba(7, 7, 7, 0.1);">
-                
-               <a href="./Berry Smoothie Bowl.html"><img src="./image copy 7.png" alt="Berry Smoothie Bowl" style="width:400px;height:400px;"></a> 
-                <p style="font-size: 34px;font-weight:bold;">Berry Smoothie Bowl</p>
-                
+            <div class="box3">
+                Mindful Eating Pay attention to your hunger and fullness cues, and try to eat without distractions to
+                better enjoy your food and prevent overeating.
+                <button>Wellness</button>
             </div>
-            <div style="display: inline-block;
-                    height: auto;width: 24%; border-radius: 15px;
-                    padding: 40px;
-                    padding-bottom: 10px;
-                    font-size: 25px;
-                    box-shadow: 0 4px 8px rgba(7, 7, 7, 0.1);">
-                
-              <a href="./Hearty Lentil Stew.html"><img src="./image copy 8.png" alt="Hearty Lentil Stew" style="width:400px;height:400px;"></a>  
-                <p style="font-size: 34px;font-weight:bold;">Hearty Lentil Stew</p>
-                
+            <div class="box4">
+                Plan Your Meals Take some time each week to plan your meals. This can help you make healthier choices
+                and reduce last-minute unhealthy eating.
+                <button>Planning</button>
             </div>
-    
-    
+            <div class="box5">
+                Limit Processed Foods Try to minimize your intake of processed foods, which often contain high levels of
+                sugar, salt, and unhealthy fats.
+                <button>Healthy Eating</button>
+            </div>
+            <div class="box6">
+                Light Dinner Wins Keep dinner lighter and finish eating 2-3 hours before bedtime to improve digestion
+                and sleep
+                <button>Evening</button>
+            </div>
+        </DIV>
     </div>
-    
+
+    <div class="nutrution_receipes" id="recepies">
+        <h1 style="font-size: 45px;">Nutrition Receipes Collection</h1>
+        <p>Delicious, healthy meals that are easy to prepare and perfect for any time of day</p>
+
+        <div class="recipe-card">
+            <a href="./Mediterranean Quinoa Bowl.html">
+                <div class="recipe-image" style="background-image: url('./image\ copy\ 5.png');"></div>
+                <p>Mediterranean Quinoa Bowl</p>
+            </a>
+        </div>
+
+        <div class="recipe-card">
+            <a href="./Herb-Crusted Salmon.html">
+                <div class="recipe-image" style="background-image: url('./image\ copy\ 6.png');"></div>
+                <p>Herb-Crusted Salmon</p>
+            </a>
+        </div>
+
+        <div class="recipe-card">
+            <a href="./Berry Smoothie Bowl.html">
+                <div class="recipe-image" style="background-image: url('./image\ copy\ 7.png');"></div>
+                <p>Berry Smoothie Bowl</p>
+            </a>
+        </div>
+
+        <div class="recipe-card">
+            <a href="./Hearty Lentil Stew.html">
+                <div class="recipe-image" style="background-image: url('./image\ copy\ 8.png');"></div>
+                <p>Hearty Lentil Stew</p>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <div id="Tools">
+            <table id="About">
+                <thead>
+                    <tr>
+                        <th>EatWell Daily</th>
+                        <th>Quick Links</th>
+                        <th>Resources</th>
+                        <th>Contact Us</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Your trusted source for nutritious recipes, wellness tips, and inspiration for a healthier
+                            lifestyle.</td>
+                        <td>
+                            <ul class="hov">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#tips">Tips</a></li>
+                                <li><a href="#recepies">Receipes</a></li>
+                                <li>Tools</li>
+                                <li>About</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Blog</li>
+                                <li>eBooks</li>
+                                <li>Meal Plans</li>
+                                <li>Nutrition Guides</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <form action="post">
+                                <input type="email" placeholder="Email">
+                                <br>
+                                <button type="submit">Subscribe</button>
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>&copy; 2024 EatWell Daily. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
+
 </html>

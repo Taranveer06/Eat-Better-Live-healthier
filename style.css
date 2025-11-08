@@ -1,73 +1,503 @@
-/* Do not modify this. */
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
- 
-  line-height: 1.5;
-  color: #333;
-}
-.header-container {
-  width: 100%;
-  margin: 0 0;
-  position: fixed;
+    line-height: 1.5;
+    color: #333;
+    overflow-x: hidden;
 }
 
+a {
+    text-decoration-line: none;
+    color: black;
+}
+
+.header-container {
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
 
 .site-header {
-  background: white;
-  color: #0b0a0a;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    background: white;
+    color: #0b0a0a;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
 .headerimg {
-  width: 65px;
-  height: 65px;
-  
-  display: inline-block;
+    width: 65px;
+    height: 65px;
+    display: inline-block;
 }
+
 .logo {
-  font-size:2.2rem;
-  font-weight: bold;
-  color: #0f0f0f;
-  text-decoration: none;
-  /* border: 2px solid #000; */
-  /* display: inline-block; */
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #0f0f0f;
+    text-decoration: none;
 }
+
 .nav-list {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+    list-style: none;
+    padding-left: 300px;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-.nav-link {
-  text-decoration: none;
-  color: #070606;
-  text-transform: uppercase;
-  padding-right: 25px;
-  font-size: 20px;
+.nav-link>a {
+    text-decoration: none;
+    color: #040404;
+    text-transform: uppercase;
+    font-size: 20px;
+    white-space: nowrap;
 }
+
 .getstarted-btn {
-  background: rgb(11, 191, 110);
-  font-size: 20px;
-  color: #fff;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-.getstarted-btn:hover {
-  background: rgb(13, 125, 84);
-  
-}
-.getstarted-btn:active {
-  transform: scale(0.98);
-}
-.nav-link:hover { color: rgb(25, 164, 106);
- }
-.nav-link.active {
-  border-bottom: 2px solid rgb(14, 183, 121);transform: scale(0.98);
+    background: rgb(11, 191, 110);
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
 }
 
+.getstarted-btn:hover {
+    background: rgb(13, 125, 84);
+}
+
+.getstarted-btn:active {
+    transform: scale(0.98);
+}
+
+.nav-list :hover {
+    color: rgb(11, 191, 110);
+    cursor: pointer;
+}
+
+.nav-list>li:hover {
+    transform: scale(1.18);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-list button:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.nav-link.active {
+    border-bottom: 2px solid rgb(14, 183, 121);
+    transform: scale(0.98);
+}
+
+.firstpage {
+    background-color: rgb(245, 249, 246);
+    margin: 0px;
+    min-height: 100vh;
+    padding: 20px;
+    position: relative;
+}
+
+.firstpage>h1 {
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: left;
+    display: inline-block;
+    position: absolute;
+    color: black;
+
+    top: 210px;
+    font-size: 95px;
+    max-width: 600px;
+}
+
+.firstpage>img {
+    box-sizing: border-box;
+    max-width: 600px;
+    min-width: 100px;
+    width: 600px;
+    position: absolute;
+    top: 200px;
+    right: 70px;
+    height: auto;
+
+    border-radius: 35px;
+    margin: 30px auto;
+}
+
+.firstpage>img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.firstpage>p {
+    position: absolute;
+    top: 600px;
+    padding: 20px 5%;
+    font-size: 24px;
+    color: rgb(90, 88, 88);
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.firstpage>.buttonfirstpage {
+    position: absolute;
+    top: 700px;
+    padding: 20px 5%;
+    text-align: center;
+}
+
+.firstpage>.buttonfirstpage>button {
+    margin: 10px;
+    padding: 15px 25px;
+    font-size: 20px;
+    min-width: 180px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(10, 201, 103);
+    color: white;
+}
+
+.firstpage>.buttonfirstpage>button:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.secondpage{
+    border-top-left-radius: 25%;
+    border-top-right-radius: 50px;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.hov :hover {
+    color: rgb(11, 191, 110);
+
+
+}
+
+.wellness-guide-btn {
+    position: absolute;
+    top: 180px;
+    left: 5%;
+    height: auto;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(228, 238, 228);
+    border: 3px solid rgb(110, 202, 133);
+    border-radius: 25px;
+    z-index: 0;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 10px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+    background-color: rgb(245, 249, 246);
+    display: inline-block;
+    color: rgb(6, 6, 6);
+    width: 300px;
+    min-width: 250px;
+    height: auto;
+    border-radius: 15px;
+    padding: 40px;
+    margin: 20px;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(7, 7, 7, 0.1);
+    position: relative;
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover,
+.box5:hover,
+.box6:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 16px rgba(7, 7, 7, 0.2);
+}
+
+.wellnesstips {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px 5%;
+    color: #555;
+}
+
+.box1 {
+    margin-top: 40px;
+    background-image: url('./image\ copy\ 2.png');
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+}
+
+.box2 {
+    background-image: url('./image\ copy\ 4.png');
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+}
+
+.box1 button,
+.box2 button,
+.box3 button,
+.box4 button,
+.box5 button,
+.box6 button {
+    border: none;
+    padding: 5px 10px;
+    font-size: 17px;
+    background-color: rgb(11, 191, 110);
+    border-radius: 15px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.nutrution_receipes {
+    text-align: center;
+    margin-top: 50px;
+    background-color: rgb(246, 246, 246);
+    padding: 50px 20px;
+    font-size: 30px;
+}
+
+.nutrution_receipes>p:first-of-type {
+    font-weight: bold;
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
+.nutrution_receipes>p:nth-of-type(2) {
+    font-size: 28px;
+    color: rgb(91, 90, 90);
+    margin-bottom: 30px;
+}
+
+.recipe-card {
+    display: inline-block;
+    width: 300px;
+    min-width: 250px;
+    padding: 20px;
+    margin: 10px;
+    vertical-align: top;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 16px rgba(7, 7, 7, 0.2);
+    border-radius: 20px;
+}
+
+.recipe-image {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(7, 7, 7, 0.1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.recipe-card p {
+    font-size: 34px;
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+    text-decoration-line: none;
+}
+
+.secondpage {
+    background-color: white;
+    min-height: 800px;
+    width: 100%;
+    margin-top: -50px;
+    box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding: 50px 5%;
+}
+
+.secondpage h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.secondpage>p:first-of-type {
+    font-size: 24px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.wellness-title {
+    font-size: 80px;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-top: 40px;
+}
+
+th {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+    padding: 20px;
+    font-size: 24px;
+}
+
+table {
+    width: 100%;
+    cursor: pointer;
+}
+
+td {
+    padding: 10px;
+    font-size: 22px;
+}
+
+table ul {
+    list-style: none;
+    padding: 0;
+}
+
+table ul li {
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+table form input {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 15px 20px;
+    font-size: 22px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+table form button {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px 20px;
+    background-color: rgb(10, 201, 103);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+table>thead>tr>th:hover {
+    color: rgb(110, 202, 133);
+}
+
+table>tbody>tr>td>ul>li:hover {
+    color: rgb(110, 202, 133);
+}
+
+table>tbody>tr>td>ul>li>a:hover {
+    color: rgb(110, 202, 133);
+}
+
+footer {
+    padding: 20px;
+}
+
+footer p {
+    text-align: center;
+    padding: 20px;
+    color: gray;
+    font-size: 27px;
+}
+
+
+@media (max-width: 1200px) {
+
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .box5,
+    .box6 {
+        width: 100px;
+    }
+
+    .recipe-card {
+        width: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .firstpage>h1 {
+        padding-top: 180px;
+    }
+
+    .wellness-guide-btn {
+        position: static;
+        margin: 20px auto;
+        display: block;
+        width: fit-content;
+    }
+
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .box5,
+    .box6 {
+        width: 60px;
+        margin: 20px auto;
+    }
+
+    .recipe-card {
+        width: 60px;
+    }
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    th,
+    td {
+        width: 100%;
+        text-align: left;
+    }
+}
