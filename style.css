@@ -446,12 +446,7 @@ footer p {
 
 @media (max-width: 1200px) {
 
-    .box1,
-    .box2,
-    .box3,
-    .box4,
-    .box5,
-    .box6 {
+    .box1,.box2,.box3,.box4,.box5,.box6 {
         width: 100px;
     }
 
@@ -472,12 +467,7 @@ footer p {
         width: fit-content;
     }
 
-    .box1,
-    .box2,
-    .box3,
-    .box4,
-    .box5,
-    .box6 {
+    .box1,.box2,.box3,.box4,.box5,.box6 {
         width: 60px;
         margin: 20px auto;
     }
@@ -486,17 +476,11 @@ footer p {
         width: 60px;
     }
 
-    table,
-    thead,
-    tbody,
-    th,
-    td,
-    tr {
+    table,thead,tbody,th,td,tr {
         display: block;
     }
 
-    th,
-    td {
+    th,td {
         width: 100%;
         text-align: left;
     }
